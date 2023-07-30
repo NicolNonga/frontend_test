@@ -1,0 +1,253 @@
+
+
+<div class="modal fade" id="modalCriarUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document" style="max-width: 1250px;" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Criar Paciente</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                  <!-- Modal Header -->
+    
+         
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+    
+             <!--  <app-loading [show]="this.loading"></app-loading> -->
+             <form  [formGroup]="this.simpleForm">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group has-warning">
+                    <label class="col-form-label" for="tipo_identidade_id"><span style="color: #f44336;">*</span>Tipo Usuário</label>
+                    <div class="input-group mb-3">
+                      <select  class="form-control" formControlName="user_type" required autofocus disabled
+                       >
+                        <option [value]="null">Tipo de Identidade</option>
+                       <option [value]="tipo_user?.tipo" *ngFor="let tipo_user of this.tipoUtilizador">
+                        {{tipo_user.tipo}}
+                       </option>
+                      </select>
+
+               
+                   
+                    </div>
+                    <span
+                    class="text-danger"
+                    *ngIf="
+                      (this.f.user_type.touched || this.submitted) && f.user_type.errors?.required
+                    "
+                    >Campo obrigatório</span>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="col-form-label" for="nome"><span style="color: #f44336;">*</span> Nome</label>
+                    <input class="form-control" formControlName="name" required autofocus id="nome" type="text"
+                      placeholder="Nome" autocomplete="given-name"
+                     />
+               
+                  </div>
+
+                  <span
+                  class="text-danger"
+                  *ngIf="
+                    (this.f.name.touched || this.submitted) && f.name.errors?.required
+                  "
+                  >Campo obrigatório</span>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group has-warning">
+                    <label class="col-form-label" for="tipo_identidade_id"><span style="color: #f44336;">*</span>Email</label>
+                    <div class="input-group mb-3">
+                      <input class="form-control" formControlName="email" required autofocus id="nome" type="email"
+                      placeholder="email" autocomplete="given-name"
+                     />
+                   
+                    </div>
+                    <span
+                    class="text-danger"
+                    *ngIf="
+                      (this.f.email.touched || this.submitted) && f.email.errors?.required
+                    "
+                    >Campo obrigatório</span>
+                  </div>
+                </div>
+  
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="col-form-label" for="data_nascimento"><span style="color: #f44336;">*</span> Data de Nascimento</label>
+                    <input class="form-control" formControlName="date_birth" required autofocus id="data_nascimento" type="date" 
+                       placeholder="__/__/_____" autocomplete="given-name"/>
+               
+                  </div>
+                  <span
+                  class="text-danger"
+                  *ngIf="
+                    (this.f.date_birth.touched || this.submitted) && f.date_birth.errors?.required
+                  "
+                  >Campo obrigatório</span>
+                </div>
+
+       
+
+
+                <div class="col-md-4">
+                    <div class="form-group has-warning">
+                      <label class="col-form-label" for="tipo_identidade_id"><span style="color: #f44336;">*</span>Familia Militar</label>
+                      <div class="input-group mb-3">
+                        <select  class="form-control" formControlName="militar_id" required autofocus
+                         >
+                          <option [value]="null">selecione a especialidade</option>
+                         <option [value]="militar?.id" *ngFor="let militar of this.militars">
+                          {{militar.user_info?.nome}}
+                         </option>
+                        </select>
+                     
+                      </div>
+                      <span
+                      class="text-danger"
+                      *ngIf="
+                        (this.f.militar_id.touched || this.submitted) && f.militar_id.errors?.required
+                      "
+                      >Campo obrigatório</span>
+                      
+                    </div>
+                  </div>
+  
+                  <div class="col-md-4">
+                    <div class="form-group has-warning">
+                      <label class="col-form-label" for="tipo_identidade_id"><span style="color: #f44336;">*</span>Grau Parentesco</label>
+                      <div class="input-group mb-3">
+                        <select  class="form-control" formControlName="grau_parentesco_id" required autofocus
+                         >
+                          <option [value]="null">selecione a o Grau</option>
+                         <option [value]="grau?.id" *ngFor="let grau of this.grauParentescos">
+                          {{grau?.designacao}}
+                         </option>
+                        </select>
+                     
+                      </div>
+                      <span
+                      class="text-danger"
+                      *ngIf="
+                        (this.f.grau_parentesco_id.touched || this.submitted) && f.grau_parentesco_id.errors?.required
+                      "
+                      >Campo obrigatório</span>
+                      
+                    </div>
+                  </div>
+     
+
+                <div class="col-md-4">
+                  <div class="form-group has-warning">
+                    <label class="col-form-label" for="tipo_identidade_id"><span style="color: #f44336;"></span></label>
+                    <div class="input-group mb-2">
+               
+                      <input type="radio" id="html" formControlName="sex" class="form-control" name="sex" value="masculino">
+                        <label for="html">Masculino</label><br>
+                        <input type="radio" formControlName="sex" class="form-control" id="css" name="sex" value="femelino">
+                        <label for="css">Femelino</label><br>
+                   
+                    </div>
+                    <span
+                    class="text-danger"
+                    *ngIf="
+                      (this.f.sex.touched || this.submitted) && f.sex.errors?.required
+                    "
+                    >Campo obrigatório</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+    
+                  
+    
+                <div class="col-md-3">
+                  <div class="form-group has-warning">
+                    <label class="col-form-label"><span style="color: #f44336;">*</span> BI</label>
+                    <div class="input-group mb-3">
+                      <input type="text"class="form-control" formControlName="bi" required autofocus
+                        placeholder="Bilhete de Identidade"
+                      >
+                  
+                    </div>
+                    <span
+                    class="text-danger"
+                    *ngIf="
+                      (this.f.bi.touched || this.submitted) && f.bi.errors?.required
+                    "
+                    >Campo obrigatório</span>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group has-warning">
+                    <label class="col-form-label"><span style="color: #f44336;">*</span>Tefone</label>
+                    <div class="input-group mb-3">
+                      <input type="text"class="form-control" formControlName="telefone" required autofocus
+                        placeholder="Bilhete de Identidade"
+                      >
+                  
+                    </div>
+                    <span
+                    class="text-danger"
+                    *ngIf="
+                      (this.f.telefone.touched || this.submitted) && f.telefone.errors?.required
+                    "
+                    >Campo obrigatório</span>
+                  </div>
+                </div>
+    
+    
+                <div class="col-md-3">
+                  <div class="form-group has-warning">
+                    <label class="col-form-label"><span style="color: #f44336;">*</span> Residência</label>
+                    <div class="input-group mb-3">
+                      <input type="text"class="form-control" formControlName="residence" required autofocus
+                        placeholder="residência"
+                      >
+                  
+                    </div>
+                    <span
+                    class="text-danger"
+                    *ngIf="
+                      (this.f.residence.touched || this.submitted) && f.residence.errors?.required
+                    "
+                    >Campo obrigatório</span>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group has-warning">
+                    <label class="col-form-label"><span style="color: #f44336;">*</span>Palavra-pass</label>
+                    <div class="input-group mb-3">
+                      <input type="password"class="form-control" formControlName="password" required autofocus
+                        placeholder="Nº de identificação"
+                      >
+                  
+                    </div>
+                  </div>
+                </div>
+    
+    
+    
+              </div>
+             </form>
+
+            </div>
+    
+         
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          <button type="button" (click)="this.submite()" class="btn btn-primary">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>

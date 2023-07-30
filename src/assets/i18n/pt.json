@@ -1,0 +1,605 @@
+{
+  "Invoicing": "Facturação",
+  "Name": "Nome",
+  "NameError": "I am sure you must have a name!",
+  "Email": "Email",
+  "PhoneNo": "Telefone",
+  "Password": "Senha",
+  "Bio": "Informar bio",
+  "Submit": "Salvar",
+  "Clients": "Clientes",
+  "Listing_clients": "Listagem de clientes",
+  "Budgets": "Orçamentos",
+  "Searching_Budget": "Consultar Orçamentos",
+
+  "Searching_Contest": "Consultar Concursos",
+  "New_Invoice": "Nova Facturação",
+  "Searching": "Pesquisar",
+  "Main_Page": "Página Principal",
+  "Business_Agenda": "Agenda Comercial",
+  "Constructions": "Obras",
+  "Listing_Constructions": "Listar Obras",
+  "Reporting_BI": "Relatórios e BI",
+  "Settings": "Configurações",
+  "Configure_Company": "Configurar Empresa",
+  "Configure_Notification": "Notificações",
+  "Notification_Maintenance_Plan": "Plano de Manutenção",
+  "Notification_Article_Demobilization": "Desmobilização de Artigo",
+  "Access_Control": "Controle Acesso",
+  "Users": "Utilizadores",
+  "Permissions": "Permissões",
+  "Roles": "Perfis",
+  "Access_Logs": "Logs de Acessos",
+  "General_Logs": "Logs geral",
+  "Taxes": "Impostos",
+  "Register": "Registar",
+  "Listing": "Listar",
+  "Equipment": "Equipamento",
+  "Documents": "Documentos",
+  "Type_Customers": "Tipo de Clientes",
+  "Series": "Séries",
+  "Payments_Type": "F. Pagamentos",
+  "Currency": {
+    "Title": "Moeda",
+    "Tax": "Câmbio",
+    "Proposal_Value": "V. Proposta",
+    "Margin": "MB",
+    "Deadline": "Prazo"
+  },
+  "Banks": "Bancos",
+  "Map": "Mapa",
+  "Countries": "Paises",
+  "Provinces": "Províncias",
+  "Municipalities": "Municípios",
+  "Number_Number": "No Line",
+  "Customer_Type": "",
+  "Filter": {
+    "Title": "Filtro",
+    "filter_data": "Filtrar dados",
+    "Number": "Nº Linhas",
+    "Customer_Type": "Tipo de clientes",
+    "Filter_By": "Filtrar por",
+    "Status": "Status",
+    "Filter_By_Status": "Filtrar por status",
+    "Filter_By_State": "Filtrar por estado",
+    "Filter_By_Year": "Filtar por ano",
+    "Year": "Ano",
+    "Filter_By_Type": "Filtrar por tipo",
+    "Data_Filter": "Filtro de Dados"
+  },
+
+  "AfterSale":{
+    "TITLE":"MAPA DE CONTROLE DE GARANTIA DE OBRA - CLIENTE",
+    "ConstructionNumber":"Obra nº",
+    "ConstructionNumberApv":"Nº Obra Apv",
+    "ConstructionDesignation":"Designação da Obra",
+    "PROVISIONALTOTAL":"Total Provisória",
+    "DefinitiveTotal":"Total Definitiva",
+    "DateOfTheConclusion":"Data de Conclusão",
+    "ProvisionalReceiptDate":"Data de recepção Provisória",
+    "WarrantyStartDate": "Data Início de Garantia",
+    "WarrantyEndDate":"Data Fim de Garantia",
+    "ProvisionAPV":"Provisão APV(AOA)",
+    "DateOfPassageApv":"Data Passagem Apv",
+    "DefinitiveRenewalDate":"Data Renovação Definitiva",
+    "Action":"Ação",
+    "UnderStudy":"Em estudo",
+    "UnderConstruction":"Em Construção",
+    "Delivered":"Entregue",
+    "Status":"Estado",
+    "InactiveMonitoring(ACP1)":"Acompanhamento Inativo (ACP1)",
+    "Awarded(ADJ)":"Adjudicadas (ADJ)",
+    "VeryLikely(MP)":"Muito Provavél (MP)",
+    "Year":"Ano",
+    "Search":"Pesquisar",
+    "Print":"Imprimir",
+    "Export":"Exportar",
+    "ReloadData":"Recarregar Dados",
+    "Optiosn":{
+      "Title":"Opções",
+      "afterSalesSheet":"Ficha Pós-Venda",
+      "DefinitiveReception":"Recepção Definitiva",
+      "PVclaim":"Reclamação Pv"
+    },
+    "ShowingFrom":" Mostrando de ",
+    "Of":"de",
+    "To":"a",
+    "Registers":"Registros"
+  },
+  "Customer": {
+    "Title": "Clientes",
+    "Entity": "Entidade",
+    "Table": "TABELA DE CLIENTES",
+    "Name": "Nome",
+    "Email": "Email",
+    "MarketType":"Tipo de Mercado",
+    "Sector":"Setor",
+    "Code":"Código",
+    "Search":"Pesquisar",
+    "Options":{
+      "Print": "Imprimir Lista",
+      "Export": "Exportar Lista"
+    },
+    "ShowingFrom":" Mostrando de ",
+    "To":"a",
+    "Of":"de",
+    "Previous":"Anterior",
+    "Next":"Próximo",
+    "Registers":"Registros",
+    "Print":"Imprimir Ficha",
+    "TIN": "NIF",
+    "Contacts":"Contactos",
+    "Expand":"Expandir Cliente",
+    "CustomerRegister":"Registar Cliente",
+    "Category":"Categoria",
+    "Phone": "Telefone",
+    "ReloadData":"Recarregar Dados",
+    "Address": "Endereço",
+    "Construction": "Empreitada",
+    "Customer_Type": "Tipo de cliente",
+    "New_Customer": "Registar Cliente",
+    "Validation": {
+      "Name": "Name is required",
+      "Email": "Email is required",
+      "Customer_Type": "Customer Type is required",
+      "TIN": "TIN is required",
+      "Identity_Type": "Identity type is required",
+      "Identity_Mask": "The maximum character accepted is"
+    }
+  },
+  "PropostasEmEstudo":{
+    "Title":"PROPOSTAS EM ESTUDO",
+    "BasePrice":" Preço base",
+    "Status":"Estado"
+  },
+  "subcontractor":{
+    "Title":"TABELA DE SUBEMPREITEIROS"
+  },
+  "ProjectosEntregues":{
+    "Title":"TABELA DE PROPOSTAS ENTREGUES",
+    "ProcessNumber":"Número Processo",
+    "Localization":"localização",
+    "Currency":"Moeda",
+    "Margin":"Margem",
+    "ProposalValue":"Valor da Proposta",
+    "BaseValue":"Valor Base",
+    "DeleveryDate":"Data de Entrega",
+    "MonetaryValue":"Valor Monetário",
+    "Status":"Estado"
+  },
+  "dashboard":{
+    "Constructions":"Obras"
+  },
+  "Oportunities": {
+    "ShowingFrom":" Mostrando de ",
+    "To":"a",
+    "Of":"de",
+    "Previous":"Anterior",
+    "Next":"Próximo",
+    "Registers":"Registros",
+    "Title": "Oportunidades",
+    "Type": "Tipo Oportunidade",
+    "Code": "Código",
+    "Tracking":"Acompanhamento",
+    "totalBaseValue":"Total Valor Base",
+    "Table": "TABELA DE OPORTUNIDADES",
+    "Country":"País",
+    "UnderMonitoring":"Em Acompanhamento",
+    "UnderAnalysis":"Em Análise",
+    "UnderStudy":"P.Em Estudo",
+    "Delivered":"Entregue",
+    "ExpectedValue":"Valor Previsto",
+    "Responsable":"Responsável",
+    "TypeOfWork":"Tipo de Obra",
+    "Customer": "Cliente",
+    "Designation": "Designação da obra",
+    "New_Oportunity": "Nova Oportunidade",
+    "Edit_Oportunity": "Editar Oportunidade",
+    "Proposals_Delivered": "P. Entregue",
+    "Proposals_Under_Follow_UP": "Propostas em acompanhamento",
+    "Probable_Work": "Obras muito Prováveis",
+    "Adjudicated_Words": "Obras adjudicadas",
+    "Deadline": "Prazo",
+    "Year": "Ano",
+    "Proposal": "Proposta",
+    "Process_Sheet": "Ficha de processo",
+    "Status": "Status",
+    "State": "Estado",
+    "future_proposals": "Oportunidades Futuras",
+    "probable_proposals": "Propostas muito prováveis",
+    "awarded_proposals": "Propostas adjudicadas",
+    "award_stage_proposal":"Propostas em fase de adjudicação"
+  },
+  "OportunidadesEmAnalise":{
+    "Table":"TABELA DE OPORTUNIDADES EM ANÁLISE"
+  },
+  "Contests": {
+    "Title": "Concursos",
+    "Approved": "Aprovado",
+    "Repproved": "Não Aprovado",
+    "Future": "Concursos futuros",
+    "Running": "Em curso"
+  },
+  "Select": {
+    "Title": "Selecionar"
+  },
+  "Country": {
+    "Title": "Pais",
+    "Name": "Nome" ,
+    "Validation": {
+      "Name": "É obrigatório informar o pais"
+    }
+  },
+  "Province": {
+    "Title": "Província",
+    "Validation": {
+      "Name": "É obrigatório informar a provincia"
+    }
+  },
+  "Municipality": {
+    "Title": "Município",
+    "Street": "Rua",
+    "Street_Details": "Detalhes da rua",
+    "Validation": {
+      "Name": "É obrigatório informar o município"
+    }
+  },
+  "Identity": {
+    "Identity_Type": "Tipo de identidade",
+    "TIN": "NIF"
+  },
+  "Contact": {
+    "Phone": "Telefone",
+    "Phone2": "Telemóvel",
+    "Email": "Email",
+    "Validation": {
+      "Phone": "É obrigatório informar o telefone",
+      "Phone2": "É obrigatório informar o telefone"
+    }
+  },
+  "Actions": {
+    "Action": "Acções",
+    "Options": "Opções",
+    "Attachments": "Anexos",
+    "Edit": "Actualizar",
+    "Delete": "Eliminar",
+    "Update": "Recarregar dados",
+    "Save": "Salvar",
+    "Cancel": "Cancelar",
+    "Close": "Fechar",
+    "YesNoMsg": "Tens certeza que desejas eliminar?",
+    "Yes": "Sim",
+    "No": "Não",
+    "Required_Documents": "Documentos necessários",
+    "Link_Project": "Vincular projecto",
+    "Export": "Exportar",
+    "Info": "Sobre",
+    "Transfer": "Passagem de Obra",
+    "State": "Estado",
+    "Status": "Status",
+    "Award_Criteria": "C. Adjudicação",
+    "Closure_Sheet": "Folha de fecho",
+    "Visualise": "Visualisar",
+    "Remove": "Remove",
+    "Back": "Voltar"
+  },
+  "Pagination": {
+    "Showing": "Mostrando de",
+    "To": "a",
+    "From": "de",
+    "Records": "Registos",
+    "Previous": "Anterior",
+    "Next": "Próximo"
+  },
+  "Attachments": {
+    "Upload": "Carregar",
+    "Cancel": "Cancelar",
+    "Choose": "Escolher",
+    "Name": "Nome",
+    "Doc_Type": "Tipo de documento",
+    "Extension": "Extensão",
+    "Date": "Data",
+    "Date_Update": "Data Actualização",
+    "Title": "Carregar anexo",
+    "Size": "Tamanho",
+    "Type": "Tipo"
+  },
+  "Messages": {
+    "Delete": "Tens certeza que desejas eliminar?",
+    "Update_State": "Desejas actualizar o estado?",
+    "Update_Status": "Desejas actualizar o status?"
+  },
+  "Award_Criteria": {
+    "Title": "Critério de adjudicação",
+    "New_Criteria": "Selecinar Novo",
+    "Add": "Adicinar",
+    "Criteria_added": "Critérios adicionados",
+    "Name": "Nome"
+  },
+  "Sidebar": {
+    "Documents": {
+      "Title": "Documentos"
+    },
+    "Oportunity":{
+      "TITLE":"Oportunidades",
+      "attendance":"Acompanhamento",
+      "UnderAnalysis":"Em Análise",
+      "UnderStudy":"Em Estudo",
+      "DeliveredProject":"P. Entregues"
+    },
+    "OperationalControl":{
+      "TITLE":"Controlo Operacional",
+      "Constructions":"Listar Obras"
+    },
+    "QAs":{
+      "TITLE":"QAs",
+      "EnvironmentalManagement":"Gestão Ambiental",
+      "SecurityAndHealth":"Segurança e Saúde",
+      "Quality":"Qualidade"
+    },
+    "Logistics":{
+      "TITLE":"Logística",
+      "UnigRequests":"Requisições UNIG",
+      "SapRequests":"Requisições SAP"
+    },
+    "Fleet":{
+      "TITLE":"Frotas",
+      "Requests":"Requisições",
+      "TransportManagement":"Gestão de Transporte"
+    },
+    "EquipmentManagement":{
+      "TITLE":"G. de Equipamentos",
+      "Equipments":"Equipamentos",
+      "EquipmentTransfer":"Transfer. de Equipamentos",
+      "EquipmentSlaughtered":"Equipamentos Abatido",
+      "SalaryHistory":"Histórico Salário",
+      "SalaryConfiguration":"Configurações Salário"
+    },
+    "WorkShop":{
+      "TITLE":"Oficina",
+      "Maintenance" :{
+        "TITLE":"Manutenções",
+        "Indicators":"Indicadores",
+        "Remedial":"Corretiva",
+        "Preventive":{
+          "TITLE":"Preventiva",
+          "MaintenancePlan":"Plano de Manutenção"
+        },
+        "Others":"Outras",
+        "Historic":"Histórico"
+      }
+    },
+    "HumanResources":{
+      "TITLE":"Recursos Humanos",
+      "Listing":"Listar",
+      "ConstructionCollaborators":"Colaboradores da Obra",
+      "WorkShopCollaborators":"Colaboradores da Oficina"
+    },
+    "constructions":{
+      "AfterSales":"Pós Vendas",
+      "measurer":"Medidor",
+      "Subcontractors":"Subempreiteiros",
+      "Managers":"Gestores",
+      "Estimator":"Orçamentista"
+    },
+    "AccountingFinance":"Contab. Financças",
+    "SaleOrder":"Ordem de Venda",
+    "CreditNote":"Nota Crédito",
+    "ReasonForOrder":"Motivo de Ordem",
+
+    "Customer_Type": {
+      "Title": "Tipo de clientes",
+      "Register": "Registar",
+      "Listing": "Listar"
+    },
+    "Support": "Ajuda",
+    "Recycling": "Reciclagem",
+    "Audit_Loggin": "Audit & Logging"
+  },
+  "Managers":{
+    "TITLE":"TABELA DE GESTORES",
+    "Name":"Nome",
+    "IdentityNumber":"Número Identidade",
+    "Phone":"Telefone",
+    "Mobile":"Telemóvel",
+    "Email":"E-mail",
+    "Actions":{
+      "TITLE":"Ações"
+    }
+  },
+  "BUDGETERS":{
+    "TITLE":"TABELA DE ORÇAMENTISTA",
+    "Name":"Nome",
+    "Address":"Endereço",
+    "Phone":"Telefone",
+    "Mobile":"Telemóvel"
+  },
+  "Working": {
+    "Table": "TABELA DE OBRAS",
+    "Designation": "Designação da obra"
+  },
+  "Time": {
+    "Year": "Ano"
+  },
+  "Projects": {
+    "Title": "Obras"
+  },
+  "Employeer": {
+    "Title": "Funcionários"
+  },
+  "see_note": "Ver Observação",
+  "note": "Observação",
+  "code": "Código",
+  "client_type": "Tipo de Cliente",
+  "address": "Endereço",
+  "phone_number": "Telefone",
+  "description": "Descrição",
+  "idiom": "Idioma",
+  "region": "Região",
+  "name": "Nome",
+  "cellphone_number": "Telemóvel",
+  "add": "Adicionar",
+  "standard": "Definir padrão",
+  "designation": "designação",
+  "share_point_link": "Link SharePoint",
+  "type": "tipo",
+  "delivered": "Entregues",
+  "follow_up": "Acompanhamento",
+  "very_probable": "Muito provável",
+  "awarded": "Adjudicadas",
+  "follow_up_stage": "Em fase de adjudicação",
+  "future": "Futuras",
+  "start_date": "Data Início",
+  "end_date": "Data de fecho",
+  "proposal_state": "Estado da proposta",
+  "under_analysis": "Em análise",
+  "under_study": "Em estudo",
+  "client": "Cliente",
+  "Opportunity_type": "Tipo de Oportunidade",
+  "contest_Type": "Tipo de concurso",
+  "State": "Estado",
+  "registration_date": "Data do registro",
+  "decision_deadline": "Prazo de decisão",
+  "base_amount": "Valor base",
+  "base_proposal": "Valor proposta",
+  "sub_group": "Sub grupo",
+  "process_number": "Nº de processo",
+  "responsible_estimator": "Orçamentista responsável",
+  "clarification_deadline": "Data limite de esclarecimento",
+  "payment_conditions": "Condições de pagamento",
+  "days": "dias",
+  "edit": "Editar",
+  "contactable_person": "Pessoa de contacto",
+  "information": "Informação",
+  "budget_status": "Estado do orçamento",
+  "estimator": "Orçamentista",
+  "justification": "Breve justificação",
+  "contruction": "Obra",
+  "city": "Cidade",
+  "proposal_amount_money": "Valor da proposta",
+  "exchange": "Câmbio",
+  "exchange_currency": "Moeda de câmbio",
+  "margin": "Margem",
+  "contest_result": "Resultado do concurso",
+  "responsable": "Responsável",
+  "proposal_sheet": "Ficha proposta",
+  "sync_client": "Sincronizar cliente",
+  "work_pass": "Passagem de Obra",
+  "update_customer_file": "Atualizar F.Cliente",
+  "ask_for_help": "Solicitar apoio",
+  "ask_for_help_label": "Solicitar apoio à área de engenharia",
+  "proposal_submission_date": "Data de entrega da proposta",
+  "proposal_currency": "Moeda da proposta",
+  "exchange_value": "Valor de câmbio",
+  "proposal_status": "Status da proposta",
+  "project": "Obra",
+  "cost_center": "Centro de custo",
+  "new_contact": "Novo Contacto",
+  "registered_in": "Cadastrado em",
+  "operations": "Operações",
+  "grouping_type": "Tipo de agrupamento",
+  "to": "Para",
+  "send_to": "Enviar para",
+  "request": "Solicitar",
+  "construction_boss": "Dono da obra",
+  "construction_designation": "Designação da obra",
+  "gross_area": "Área Bruta",
+  "office": "Hab./Escritório",
+  "establishment": "Estabelecimento",
+  "business": "Comércio",
+  "paving": "Pavimentação",
+  "proposal_conditions": "Condições da proposta",
+  "award_value": "Valor adjudicação",
+  "customer_deadline": "Prazo cliente",
+  "griner_deadline": "Prazo Interno",
+  "number_of_floors": "Número de pisos",
+  "above_ground": "Acima do solo",
+  "cellars": "Caves",
+  "elements_delivered": "Elementos entregue na reunião",
+  "material_request": "Pedido de materiais",
+  "add_equipment": "Adicionar equipamento",
+  "elaborate": "Elaborar TAE",
+  "send_tae": "Enviar TAE",
+  "equipment": "Equipamento",
+  "transferred_equipments": " EQUIPAMENTOS TRANSFERIDOS",
+  "filter_by_typology": "Fitrar por tipologia",
+  "preventive_maintenance": "Manutenção preventiva",
+  "corrective_maintenance": "Manutenção corretiva",
+  "report_filter": "Filtro de relatórios",
+  "update_table": "Atualizar tabela",
+  "maintenance_table": "Tabela de manutenções",
+  "requester": "Requisitante",
+  "occurrence_date": "Data da ocorrência",
+  "intervention_type": "Tipo de intervenção",
+  "any_message": "Tem Comunicado",
+  "immobilized_sheet": "Ficha imobilizado",
+  "keep_intervention": "Prosseguir Interv.",
+  "schedule_m": "Agendar M.",
+  "update_state": "Atualizar estado",
+  "work_sheet_m": "Folha Obra M.",
+  "route_sheet": "Encaminhar folha",
+  "future_opportunity": "TABELA DE OPORTUNIDADES FUTURAS",
+  "predicted_value": "Valor previsto",
+  "required": "Campo obrigatório",
+  "Entry": "Entrada",
+  "Growing": "Crescente",
+  "Descending": "Descrente",
+  "Clean": "Limpar",
+  "Validate": "Validar",
+  "Obras": {
+    "total_in_production": "Total em produção",
+    "approvals": "Aprovações",
+    "after_sale_total": "Total Pós Venda",
+    "contra_value": "Contra valor",
+    "request_opening": "Solicitar Abert. CC",
+    "team_up": "Constituir Equipa",
+    "request_sif": "Solicitar SIF",
+    "budgeting": "Orçamentação",
+    "budget": "Orçamento",
+    "environmental_management": "Gestão Ambiental",
+    "security_health": "Segurança e Saúde",
+    "quality": "Qualidade",
+    "finish_work": "Encerrar Obra",
+    "orders": "Pedidos",
+    "open": "Aberto",
+    "waiting_for_information": "Esperando por informação",
+    "approved": "Aprovados",
+    "canceled": "Cancelados",
+    "priorities": "Prioridades",
+    "very_low": "Muito baixo",
+    "very_high": "Muito Alta",
+    "average": "Média",
+    "urgent": "Urgente",
+    "entry_menu": "Menu de entrada",
+    "provisioning": "Aprovisionamento",
+    "subcontracts": "Sub empreitadas",
+    "meter_table": "Tabela de medidores",
+    "register_estimator": "Registrar Orçamentista",
+    "stock_movement_type": "Tipo Movimento Stock",
+    "types_of_works": "Tipos de Obras",
+    "sub-group_types_of_works": "Sub Grupo Tipos de Obras",
+    "types_of_opportunities": "Tipos de Oportunidades",
+    "type_of_work": "Tipo de Obra"
+  },
+
+  "configuracao_tipo_concursos": {
+    "table_title": "TABELA DE TIPOS DE CONCURSOS",
+    "Contests": "Concursos",
+    "Types_of_Contests": "Tipos de Concursos"
+  },
+  "configuracao_tipo_oportunidades": {
+    "table_title": "TABELA DE TIPOS DE OPORTUNIDADE"
+  },
+  "configuracao_tipo_obras": {
+    "table_title": "TABELA DE TIPOS DE OBRAS"
+  },
+  "configuracao_sub_grupo_tipo_obra": {
+    "table_title": "TABELA DE SUB GRUPO DE TIPOS DE OBRAS"
+  },
+  "configuracao_estado_orcamento": {
+    "table_title": "TABELA DE ESTADOS DO ORÇAMENTO"
+  },
+  "configuracao_status_proposta": {
+    "table_title": "TABELA DE STATUS DAS PROPOSTAS"
+  }
+}

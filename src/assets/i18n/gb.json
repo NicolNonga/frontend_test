@@ -1,0 +1,602 @@
+{
+  "Invoicing": "Invoicing",
+  "Name": "Name",
+  "Email": "Email",
+  "PhoneNo": "Phone",
+  "Password": "Passaword",
+  "Bio": "Enter Bio",
+  "Submit": "Submit",
+  "Clients": "Customers",
+  "Listing_clients": "Listing Clients",
+  "Budgets": "Budgets",
+  "Searching_Budget": "Searching Budgets",
+  "Searching_Contest": "Searching Constest",
+  "New_Invoice": "New Budget",
+  "Searching": "Searching",
+  "Main_Page": "Main Page",
+  "Business_Agenda": "Business Agenda",
+
+  "Constructions": "Constructions",
+  "Listing_Constructions": "Listing Constructions",
+  "Reporting_BI": "Reporting & BI",
+  "Settings": "Settings",
+  "Configure_Company": "Configure Company",
+  "Configure_Notification": "Notification",
+  "Notification_Maintenance_Plan": "Maintenance Plan",
+  "Notification_Article_Demobilization": "Article Demobilization",
+  "Access_Control": "Access Control",
+  "Users": "Users",
+  "Permissions": "Permissons",
+  "Roles": "Roles",
+  "Access_Logs": "Access Logs",
+  "General_Logs": "General Logs",
+  "Taxes": "Taxes",
+  "Register": "Register",
+  "Listing": "Listing",
+  "Equipment": "Equipment",
+  "Documents": "Documents",
+  "Customers_Type": "Customers Type",
+  "Series": "Series",
+  "Payments_Type": "Payments Type",
+  "Currency": {
+    "Title": "Currency",
+    "Tax": "Tax",
+    "Proposal_Value": "P. Value",
+    "Deadline": "Dead Line",
+    "Margin": "MG"
+  },
+  "Banks": "Banks",
+  "Map": "Map",
+  "Countries": "Countries",
+  "Provinces": "Provinces",
+  "Municipalities": "Municipalities",
+  "Number_Number": "No Line",
+  "Customer_Type": "",
+  "Filter": {
+    "Title": "Filter",
+    "filter_data": "Filter Data",
+    "Number": "No Line",
+    "Customer_Type": "Customer Type",
+    "Filter_By": "Filter By",
+    "Status": "Status",
+    "Filter_By_Status": "Filter by status",
+    "Filter_By_State": "Filter by state",
+    "Filter_By_Year": "Filter By Year",
+    "Year": "Year",
+    "Filter_By_Type": "Filter by type",
+    "Data_Filter": "Data Filter",
+    "Filter": "Filter"
+  },
+
+  "OportunidadesEmAnalise":{
+    "Table":"TABLE OF OPPORTUNITIES UNDER ANALYSIS"
+  },
+  "PropostasEmEstudo":{
+    "Title":"PROPOSALS UNDER STUDY TABLE",
+    "BasePrice":"Base Price",
+    "Status":"Status"
+  },
+  "dashboard":{
+    "Constructions":"Constructions"
+  },
+  "ProjectosEntregues":{
+    "Title":"PROPOSALS DELIVERED TABLE",
+    "ProcessNumber":"Process Number",
+    "Localization":"localization",
+    "Currency":"Currency",
+    "Margin":"Margin",
+    "ProposalValue":"Proposal Value",
+    "DeleveryDate":"Delivery Date",
+    "MonetaryValue":"Monetary Value",
+    "Status":"Status"
+  },
+  "Oportunities": {
+    "ShowingFrom":"Showing from ",
+    "To":"to",
+    "Of":"of",
+    "Previous":"Previous",
+    "Next":"Next",
+    "Registers":"Registers",
+    "Title": "Opportunities",
+    "Type": "Opportunity Type",
+    "Code": "Code",
+    "Table": "Opportunities Table",
+    "Tracking":"Tracking",
+    "totalBaseValue":"Total Base Value",
+    "Country":"Country",
+    "TypeOfWork":"Type of Work",
+    "ExpectedValue":"Expected Value",
+    "Responsable":"Responsable",
+    "Customer": "Customer",
+    "Designation": "Work's Designation",
+    "New_Oportunity": "New Opportunity",
+    "Edit_Oportunity": "Edit Opportunity",
+    "Proposals_Delivered": "Proposals delivered",
+    "Proposals_Under_Follow_UP": "Proposals under follow-up",
+    "Probable_Work": "Probable Works",
+    "Adjudicated_Words": "Adjudicated Works",
+    "Deadline": "Deadline",
+    "Year": "year",
+    "Proposal": "Proposal",
+    "Process_Sheet": "Process Sheet",
+    "UnderAnalysis":"Under Analysis",
+    "UnderStudy":"Under Study",
+    "Delivered":"Delivered",
+    "future_proposals": "Oportunidades Futuras",
+    "probable_proposals": "Very probable proposals",
+    "awarded_proposals": "Awarded Proposals",
+    "award_stage_proposal":"proposal in award stage"
+  },
+  "subcontractor":{
+    "Title":"TABLE OF SUBCONTRACTORS"
+  },
+  "Customer": {
+    "Title": "Customer",
+    "Search":"Search",
+    "Table": "CUSTOMERS TABLE",
+    "Options":{
+      "Print": "Print List",
+      "Export": "Export List"
+    },
+    "Expand":"Expand Customer",
+    "Contacts":"Contacts",
+    "CustomerRegister":"Register Customer",
+    "ReloadData":"Reload Data",
+    "MarketType":"Market Type",
+    "Sector":"Sector",
+    "Code":"Code",
+    "Previous":"Previous",
+    "Next":"Next",
+    "Registers":"Register",
+    "ShowingFrom":"Showing from",
+    "To":"to",
+    "Of":"of",
+    "Print":"Print individual sheet",
+    "Entity": "Entity",
+    "Construction": "Construction",
+    "Tables": "CUSTOMER TABLE",
+    "Name": "Name",
+    "Email": "Email",
+    "TIN": "TIN",
+    "Category":"Category",
+    "Address": "Address",
+    "Phone": "Phone",
+    "Customer_Type": "Customer Type",
+    "New_Customer": "New Customer",
+    "Validation": {
+      "Name": "Name is required",
+      "Email": "Email is required",
+      "Customer_Type": "Customer Type is required",
+      "TIN": "TIN is required",
+      "Identity_Type": "Identity type is required",
+      "Identity_Mask": "The maximum character accepted is"
+    }
+  },
+  "Contests": {
+    "Title": "Contests",
+    "Approved": "Approved",
+    "Repproved": "Not Approved",
+    "Future": "Future contests",
+    "Running": "Running contests"
+  },
+  "Select": {
+    "Title": "Choose"
+  },
+  "Country": {
+    "Title": "Country",
+    "Name": "Name" ,
+    "Validation": {
+      "Name": "Country is required"
+    }
+  },
+  "Province": {
+    "Title": "Province",
+    "Validation": {
+      "Name": "Province is required"
+    }
+  },
+  "Municipality": {
+    "Title": "Municipality",
+    "Street": "Street",
+    "Street_Details": "Street Details",
+    "Validation": {
+      "Name": "Municipality is required"
+    }
+  },
+  "Identity": {
+    "Identity_Type": "Identity Type",
+    "TIN": "TIN"
+  },
+  "Contact": {
+    "Phone": "Phone",
+    "Phone2": "Phone2",
+    "Email": "Email",
+    "Validation": {
+      "Phone": "Phone is required",
+      "Phone2": "Phone 2 is required"
+    }
+  },
+  "Actions": {
+    "Action": "Actions",
+    "Options": "Options",
+    "Attachments": "Attachments",
+    "Edit": "Update",
+    "Delete": "Delete",
+    "Update": "Refresh",
+    "Save": "Save",
+    "Cancel": "Cancel",
+    "Close": "Fechar",
+    "YesNoMsg": "Are you sure to delete?",
+    "Yes": "Yes",
+    "No": "No",
+    "Required_Documents": "Required Documents",
+    "Link_Project": "Link Project",
+    "Export": "Export",
+    "Info": "Info",
+    "Transfer": "Transfer",
+    "State": "State",
+    "Status": "Status",
+    "Award_Criteria": "Award criteria",
+    "Closure_Sheet": "Closure Sheet",
+    "Visualise": "Visualise",
+    "Remove": "Remove",
+    "Back": "Back"
+  },
+  "Pagination": {
+    "Showing": "Showing",
+    "To": "to",
+    "From": "from",
+    "Records": "Records",
+    "Previous": "Previous",
+    "Next": "Next"
+  },
+  "Attachments": {
+    "Upload": "Upload",
+    "Cancel": "Cancel",
+    "Choose": "Choose",
+    "Name": "Name",
+    "Doc_Type": "Document Type",
+    "Extension": "Extension",
+    "Date": "Date",
+    "Date_Update": "Date Update",
+    "Title": "upload attachment",
+    "Size": "Size",
+    "Type": "Type"
+  },
+  "Messages": {
+    "Delete": "Are you sure you want to delete?",
+    "Update_State": "Do you want to update state?",
+    "Update_Status": "Do you want to update status?"
+  },
+  "Award_Criteria": {
+    "Title": "Award Criteria",
+    "New_Criteria": "Select Criteria",
+    "Add": "Add new",
+    "Criteria_added": "Criteria Add",
+    "Name": "Name"
+  },
+  "AfterSale":{
+    "TITLE":"CONSTRUCTION GUARANTEE CONTROL MAP - CUSTOMER",
+    "ConstructionNumber":"Construction Nr.",
+    "ConstructionNumberApv":"Construction Nr. Apv",
+    "ConstructionDesignation":"Construction Designation",
+    "PROVISIONALTOTAL":"Provisional Total",
+    "DefinitiveTotal":"Definitive Total",
+    "DateOfTheConclusion":"Date of the Conclusion",
+    "ProvisionalReceiptDate":"Provisional receipt date",
+    "WarrantyStartDate": "Warranty Start Date",
+    "WarrantyEndDate":"Warranty End Date",
+    "ProvisionAPV":"Provision APV(AOA)",
+    "DateOfPassageApv":"Date of Passage Apv",
+    "DefinitiveRenewalDate":"Definitive Renewal Date",
+    "Action":"Action",
+    "UnderStudy":"Under Study",
+    "UnderConstruction":"Under Construction",
+    "Delivered":"Delivered",
+    "Status":"Estado",
+    "InactiveMonitoring(ACP1)":"Inactive Monitoring (ACP1)",
+    "Awarded(ADJ)":"Awarded (ADJ)",
+    "VeryLikely(MP)":"Very Likely (MP)",
+    "Year":"Year",
+    "Search":"Search",
+    "Print":"Print",
+    "Export":"Export",
+    "ReloadData":"Reload Data",
+    "Options":{
+      "Title":"Options",
+      "afterSalesSheet":"after Sales Sheet",
+      "DefinitiveReception":"Definitive Reception",
+      "PVclaim":"PV claim"
+    },
+    "ShowingFrom":"Showing From",
+    "Of":"Of",
+    "To":"to",
+    "Registers":"Registers"
+  },
+  "Sidebar": {
+    "Documents": {
+      "Title": "Documents"
+    },
+    "QAs":{
+      "TITLE":"QAs",
+      "EnvironmentalManagement":"Environmental Management",
+      "SecurityAndHealth":"Security And Health",
+      "Quality":"Quality"
+    },
+    "WorkShop":{
+      "TITLE":"WorkShop",
+      "Maintenance" :{
+        "TITLE":"Maintenance",
+        "Indicators":"Indicators",
+        "Remedial":"Remedial",
+        "Preventive":{
+          "TITLE":"Preventive",
+          "MaintenancePlan":"Maintenance Plan"
+        },
+        "Others":"Others",
+        "Historic":"Historic"
+      }
+    },
+    "EquipmentManagement":{
+      "TITLE":"Equipment Management",
+      "Equipments":"Equipments",
+      "EquipmentTransfer":"Equipment Transfer",
+      "EquipmentSlaughtered":"Equipment Slaughtered",
+      "SalaryHistory":"Salary History",
+      "SalaryConfiguration":"Salary Configuration"
+    },
+    "Fleet":{
+      "TITLE":"Fleet",
+      "Requests":"Requests",
+      "TransportManagement":"Transport Management"
+    },
+    "Logistics":{
+      "TITLE":"Logistics",
+      "UnigRequests":"Unig Requests",
+      "SapRequests":"Sap Requests"
+    },
+    "OperationalControl":{
+      "TITLE":"Operational Control",
+      "Constructions":"Listing Constructions"
+    },
+    "HumanResources":{
+      "TITLE":"Huma Resources",
+      "Listing":"Listing",
+      "ConstructionCollaborators":"Construction Collaborators",
+      "WorkShopCollaborators":"WorkShop Collaborators"
+    },
+    "Oportunity":{
+      "TITLE":"Oportunities",
+      "attendance":"Monitoring",
+      "UnderAnalysis":"Under Analysis",
+      "UnderStudy":"Proposals Under Study",
+      "DeliveredProject":"Delivered Project"
+    },
+    "constructions":{
+      "AfterSales":"AfterSales",
+      "measurer":"Measurer",
+      "Subcontractors":"Subcontractors",
+      "Managers":"Managers",
+      "Estimator":"Estimator"
+    },
+      "AccountingFinance":"Accounting Finances",
+      "SaleOrder":"Sale Order",
+      "CreditNote":"Credit Note",
+      "ReasonForOrder":"Reason For Order",
+    "Customer_Type": {
+      "Title": "Customers Type",
+      "Register": "Register",
+      "Listing": "Listing"
+    },
+    "Support": "Support",
+    "Recycling": "Recycling",
+    "Audit_Loggin": "Registo & Auditoria"
+  },
+    "Managers":{
+      "TITLE":"TABLE OF MANAGERS",
+      "Name":"Name",
+      "IdentityNumber":"Identity Number",
+      "Phone":"Phone",
+      "Mobile":"Mobile",
+      "Email":"Email",
+      "Actions":{
+        "TITLE":"Actions"
+      }
+    },
+    "BUDGETERS":{
+      "TITLE":"BUDGET TABLE",
+      "Name":"Name",
+      "Address":"Address",
+      "Phone":"Telefone",
+      "Mobile":"Telemóvel"
+    },
+  "Working": {
+    "Table": "CONSTRUCTIONS TABLE",
+    "Designation": "Designation"
+  },
+  "Time": {
+    "Year": "Year"
+  }
+  ,
+  "Projects": {
+    "Title": "Projects"
+  },
+  "Employeer": {
+    "Title": "Employeer"
+  },
+  "see_note": "See Note",
+  "note": "Note",
+  "code": "Code",
+  "client_type": "Customer Type",
+  "address": "Address",
+  "phone_number": "Phone Number",
+  "description": "Description",
+  "idiom": "Idiom",
+  "region": "Region",
+  "name": "Name",
+  "cellphone_number": "Cellphone Number",
+  "add": "Add",
+  "standard": "Set as default",
+  "standard_label": "Set as default",
+  "designation": "Designation",
+  "share_point_link": "SharePoint Link",
+  "type": "type",
+  "delivered": "Delivered",
+  "follow_up": "Follow up",
+  "very_probable": "Very Probable",
+  "awarded": "Awarded",
+  "follow_up_stage": "Follow up stage",
+  "future": "Future",
+  "start_date": "start date",
+  "end_date": "end date",
+  "proposal_state": "Proposal State",
+  "under_analysis": "Under analysis",
+  "under_study": "Under study",
+  "client": "Customer",
+  "Opportunity_type": "Opportunity type",
+  "contest_Type": "Contest Type",
+  "State": "State",
+  "registration_date": "Registration date",
+  "decision_deadline": "Decision deadline",
+  "base_amount": "Base amount",
+  "base_proposal": "Valor proposta",
+  "sub_group": "Sub group",
+  "process_number": "Process number",
+  "responsible_estimator": "Responsible estimator",
+  "clarification_deadline": "Clarification deadline",
+  "payment_conditions": "Payment conditions",
+  "days": "days",
+  "edit": "Edit",
+  "contactable_person": "contactable person",
+  "information": "Information",
+  "budget_status": "Budget status",
+  "estimator": "Estimator",
+  "justification": "Justification",
+  "contruction": "Contruction",
+  "city": "City",
+  "proposal_amount_money": "Proposal amount of money",
+  "exchange": "Exchange",
+  "exchange_currency": "Exchange currency",
+  "margin": "Margin",
+  "contest_result": "Contest result",
+  "responsable": "Responsable",
+  "proposal_sheet": "Proposal sheet",
+  "sync_client": "Sinc client",
+  "work_pass": "Transfer",
+  "update_customer_file": "Update customer file",
+  "ask_for_help": "Ask for help",
+  "ask_for_help_label": "Ask for help to the engineering area",
+  "proposal_submission_date": "Proposal submission date",
+  "proposal_currency": "Proposal currency",
+  "exchange_value": "Exchange value",
+  "proposal_status": "Proposal status",
+  "project": "Project",
+  "cost_center": "Cost center",
+  "new_contact": "New Contact",
+  "registered_in": "Registered in",
+  "operations": "Operations",
+  "grouping_type": "Grouping type",
+  "to": "To",
+  "send_to": "Send to",
+  "request": "Request",
+  "construction_boss": "Construction boss",
+  "construction_designation": "Construction designation",
+  "gross_area": "Gross Area",
+  "office": "Hab./Office",
+  "establishment": "Establishment",
+  "business": "Business",
+  "paving": "Paving",
+  "proposal_conditions": "Proposal Conditions",
+  "award_value": "Award Value",
+  "customer_deadline": "Customer deadline",
+  "griner_deadline": "Griner deadline",
+  "number_of_floors": "Number of floors",
+  "above_ground": "Above the ground",
+  "cellars": "Cellars",
+  "elements_delivered": "Elements delivered at the meeting",
+  "material_request": "Material request",
+  "add_equipment": "Add equipment",
+  "elaborate": "Elaborate TAE",
+  "send_tae": "Send TAE",
+  "equipment": "Equipment",
+  "transferred_equipments": " TRANSFERRED EQUIPMENTS",
+  "filter_by_typology": "Filter by typology",
+  "preventive_maintenance": "Preventive maintenance",
+  "corrective_maintenance": "Corrective maintenance",
+  "report_filter": "Report filter",
+  "update_table": "Update table",
+  "maintenance_table": "Maintenance table",
+  "requester": "Requester",
+  "occurrence_date": "Occurrence date",
+  "intervention_type": "Intervention type",
+  "any_message": "Is there any message",
+  "immobilized_sheet": "Immobilized sheet",
+  "keep_intervention": "Keep intervention",
+  "schedule_m": "Schedule M.",
+  "update_state": "Update State",
+  "work_sheet_m": "Work sheet M.",
+  "route_sheet": "Route sheet",
+  "future_opportunity": "FUTURE OPPORTUNITIES TABLE",
+  "predicted_value": "predicted value",
+  "required": "Required field",
+  "Entry": "Entry",
+  "Growing": "Growing",
+  "Descending": "Descending",
+  "Clean": "Clear",
+  "Validate": "Validate",
+  "Obras": {
+    "total_in_production": "Total in production",
+    "approvals": "Approvals",
+    "after_sale_total": "After Sale Total",
+    "contra_value": "Contra value",
+    "request_opening": "Request CC opening",
+    "team_up": "Team up",
+    "request_sif": "Request SIF",
+    "budgeting": "Budgeting",
+    "budget": "Budget",
+    "environmental_management": "Environmental Management",
+    "security_health": "Security and Health",
+    "quality": "Quality",
+    "finish_work": "Finish Work",
+    "orders": "Orders",
+    "open": "Open",
+    "waiting_for_information": "Waiting for information",
+    "approved": "Approved",
+    "canceled": "Canceled",
+    "priorities": "Priorities",
+    "very_low": "Very Low",
+    "very_high": "Very High",
+    "average": "Average",
+    "urgent": "Urgent",
+    "entry_menu": "Entry menu",
+    "provisioning": "Provisioning",
+    "subcontracts": "Subcontracts",
+    "meter_table": "Meter Table",
+    "register_estimator": "Register Estimator",
+    "stock_movement_type": "Stock Movement Type",
+    "types_of_works": "Types of Works",
+    "sub-group_types_of_works": "Sub-Group Types of Works",
+    "types_of_opportunities": "Types of Opportunities",
+    "type_of_work": "Type of Work"
+  },
+  "configuracao_tipo_concursos": {
+    "table_title": "TABLE OF TYPES OF CONTEST",
+    "Contests": "Contests",
+    "Types_of_Contests": "Types of Contests"
+  },
+  "configuracao_tipo_oportunidades": {
+    "table_title": "CHART OF OPPORTUNITY TYPES"
+  },
+  "configuracao_tipo_obras": {
+    "table_title": "TABLE OF TYPES OF WORKS"
+  },
+  "configuracao_sub_grupo_tipo_obra": {
+    "table_title": "WORK TYPE SUB GROUP TABLE"
+  },
+  "configuracao_estado_orcamento": {
+    "table_title": "TABLE OF BUDGET STATES"
+  },
+  "configuracao_status_proposta": {
+    "table_title": "PROPOSAL STATUS TABLE"
+  }
+}

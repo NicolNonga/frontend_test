@@ -1,0 +1,42 @@
+
+
+<div class="modal fade" id="modalCriarUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document" style="max-width: 1000px;" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Criar Especialidade</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                  <!-- Modal Header -->
+    
+         
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+    
+             <!--  <app-loading [show]="this.loading"></app-loading> -->
+             <form [formGroup]="this.simpleForm" >
+
+                          <div class="row">
+                            <label class="col-form-label" for="tipo_identidade_id"><span style="color: #f44336;">*</span>Designação</label>
+                            <input class="form-control" formControlName="designacao" required autofocus id="nome" type="text"
+                            placeholder="designação" autocomplete="given-name"
+                           />
+                          </div>
+             </form>
+
+            </div>
+    
+         
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          <button type="button" (click)="this.submit()"  class="btn btn-primary">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>

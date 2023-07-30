@@ -1,0 +1,102 @@
+<div class="row">
+
+    <div class="col-lg-12 col-12">
+        <div class="modall modal-info fadee" data-backdrop="static">
+          <div class="modal-dialog" style="max-width: 100%;">
+            <div class="modal-content" style="box-shadow: 0 0 0rem rgba(0,0,0,.5);">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Listagem Pacientes</h4>
+
+                <div class="card-tools">
+                    <button class="btn btn-outline-primary btn-lg" type="button" (click)="this.listar()" ><i class="icon-refresh"></i> Recarregar Dados</button>
+                    <button class="btn btn-primary btn-lg" type="button"  data-toggle="modal" data-target="#modalCriarUser"><i class="fa fa-users"></i> Novo Paciente</button>
+                </div>
+
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <!-- /.card-body -->
+                <div class="table-responsivee">
+
+
+                <!--   <app-loading [show]="agenteComercialPedidoService.loading"></app-loading> -->
+
+                  <table class="table table-hover table-bordered table-stripedd text-center m-0 exportAsXLSXCliente">
+                    <tbody >
+                      <tr style="color: #fff; background: #193020">
+                        <th>#</th>
+                        <!-- <th>ID</th> -->
+                       <!-- <th>ID</th> -->
+                       <th>Nome</th>
+                       <th>Tefone</th>
+                       <th>Email</th>
+                       <th style="width: 329px;">Endereço</th>
+                       <th>Sexo</th>
+                       <th> Data Nascimento</th>
+                 
+                       <th>Familia Militar</th>
+                       <th>Grau Parentesco</th>
+                       <th>
+                       Data Criação
+                       </th>
+                      </tr>
+                      <tr *ngFor="let item of  this.pacientes; index as i">
+                        <t>{{i+1}}</t>
+                        <th>
+                           {{item?.user_info?.nome}}
+                        </th>
+
+                        <th>
+                           {{item?.user_info?.telefone}}
+                        </th>
+                        <th>
+                           {{item?.user_info?.user?.email}}
+                        </th>
+                        <th>
+                           {{item?.user_info?.residencia}}
+                        </th>
+                        <th>
+                           {{item?.user_info?.sexo}}
+                        </th>
+                        <th>
+                           {{item?.user_info?.data_nascimento | date: 'yyy-mm-dd'}}
+                        </th>
+                        <th>
+                           {{item?.militar?.user_info?.nome}}
+                        </th>
+                        <th>
+                            {{item?.grau?.designacao}}
+                         </th>
+              
+                        <th>
+                           {{item?.created_at | date: 'yyy-mm-dd'}}
+                        </th>
+                       </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+  <!--             <div class="modal-footer">
+                <div class="row" style="width: 100%;">
+                  <div class="col-sm-12 col-md-5">
+                    <div class="dataTables_info">Mostrando de {{this.pagination.page}} a
+                      {{this.pagination.perPage}} de
+                      {{configService.numberFormat(this.pagination.total)}} registo{{ ( this.pagination.total > 1? 's':'')}}
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-7">
+                    <div class="pull-right">
+                      <pagination-controls (pageChange)="getPageFilterData($event)" previousLabel="Anterior" maxSize="6"
+                        nextLabel="Próximo" directionLinks="true" responsive="true" id='listFact'></pagination-controls>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+ </div>
+<app-create-paciente></app-create-paciente>

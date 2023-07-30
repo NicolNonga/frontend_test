@@ -1,0 +1,39 @@
+
+  
+   <!-- Site wrapper -->
+   <div class="wrapper" >
+    <!-- Navbar -->
+
+    <app-header  class="{{ layout.layoutNavigationTop?'content-wrapper-left': ''}}"  *ngIf="layout.customLayout"></app-header>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <app-sidebar *ngIf="layout.customLayout  && !layout.layoutNavigationTop"></app-sidebar>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper {{ layout.layoutNavigationTop?'content-wrapper-left': ''}}">
+      <!-- Content Header (Page header) -->
+     <!--  <breadcrumbs [pageTitle]="header" *ngIf="layout.customLayout"></breadcrumbs> -->
+
+      <!-- Main content -->
+      <section class="content" style="background-color: white;">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <app-footer class="{{ !layout.customLayout  || layout.customLayout?'content-wrapper-left': ''}}" *ngIf="layout.customLayout  && !layout.layoutNavigationTop"></app-footer>
+    <!-- Control Sidebar --
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here --
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->

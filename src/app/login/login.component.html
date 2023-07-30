@@ -1,0 +1,104 @@
+<div class="login-container">
+  <div>
+    <img
+      class="at-logo"
+      src="assets/img/logo.jpeg"
+      alt="User Image"
+      style="width: 14%; border-radius: 8px"
+    />
+
+    <form
+      class="login-form"
+      [formGroup]="loginForm"
+      (ngSubmit)="autenticate()"
+      style="position: relative"
+    >
+      <br />
+      <!--     <ngx-loading [show]="loading"></ngx-loading> -->
+      <p class="text-muted"></p>
+
+      <div class="row">
+        <mat-form-field
+          appearance="outline"
+          class="example-full-width col-md-12 col-xs-12 col-sm-12"
+        >
+          <mat-label>Email</mat-label>
+          <input
+            type="text"
+            matInput
+            formControlName="email"
+            placeholder="utilizador"
+          />
+          <mat-icon matSuffix>person</mat-icon>
+
+          <mat-error>É obrigatório informar Nome de utilizador</mat-error>
+        </mat-form-field>
+
+        <mat-form-field
+          appearance="outline"
+          class="example-full-width col-md-12 col-xs-12 col-sm-12"
+          style="margin-top: 10px"
+        >
+          <mat-label>Password</mat-label>
+          <input
+            type="password"
+            matInput
+            formControlName="password"
+            placeholder="password"
+          />
+          <mat-icon matSuffix>lock</mat-icon>
+
+          <mat-error>É obrigatório informar a senha</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <button
+          class="btn btn-lg btn-block btn-login"
+          style="
+            height: 67px;
+            height: 67px;
+            background: #f00000ad;
+            border: none;
+            padding-top: 23px;
+            font-size: 22px;
+          "
+        >
+          <h3>Entrar</h3>
+        </button>
+      </div>
+
+      <div class="help-password">
+        <div class="text-right text-center">
+          <div class="forgot-password">
+            <a routerLink="/recover-password" class="forget-password"
+              >Esqueceu-se da palavra-passe?</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row help-password">
+  
+          <div class="col-sm-4">
+            <label class="rememberme">
+              <input type="checkbox" name="remember" value="1" /> Lembrar-me
+              <span></span>
+            </label>
+          </div>
+  
+          <div class="col-sm-8 text-right">
+            <div class="forgot-password">
+              <a routerLink="/recover-password" class="forget-password">Esqueci a palavra-passe</a>
+            </div>
+          </div>
+        </div> -->
+    </form>
+
+    <div class="copyright">
+      <p>2023 GCDM | Todos os Direitos Reservados</p>
+    </div>
+  </div>
+
+  <div class="login-bg"></div>
+</div>

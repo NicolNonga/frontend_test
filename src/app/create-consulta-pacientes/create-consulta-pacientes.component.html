@@ -1,0 +1,90 @@
+
+
+<div class="modal fade" id="modalCriarUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document" style="max-width: 1000px;" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Marcar Consulta</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                  <!-- Modal Header -->
+    
+         
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+    
+             <!--  <app-loading [show]="this.loading"></app-loading> -->
+             <form [formGroup]="this.simpleForm" >
+
+                          <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group has-warning">
+                                  <label class="col-form-label" for="tipo_identidade_id"><span style="color: #f44336;">*</span>Data da Consulta</label>
+                                  <div class="input-group mb-3">
+                                    <input class="form-control" formControlName="data_consulta" required autofocus id="nome" type="date"
+                                    placeholder="data consulta" autocomplete="given-name"
+                                   />
+                                 
+                                  </div>
+                                  <span
+                                  class="text-danger"
+                                  *ngIf="
+                                    (this.f.data_consulta.touched || this.submitted) && f.data_consulta.errors?.required
+                                  "
+                                  >Campo obrigatório</span>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group has-warning">
+                                  <label class="col-form-label" for="tipo_identidade_id"><span style="color: #f44336;">*</span>Tipo da Consulta</label>
+                                  <div class="input-group mb-3">
+                                    <input class="form-control" formControlName="tipo" required autofocus id="nome" type="text"
+                                    placeholder="tipo" autocomplete="given-name"
+                                   />
+                                 
+                                  </div>
+                                  <span
+                                  class="text-danger"
+                                  *ngIf="
+                                    (this.f.tipo.touched || this.submitted) && f.tipo.errors?.required
+                                  "
+                                  >Campo obrigatório</span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-12">
+                                <div class="form-group has-warning">
+                                  <label class="col-form-label" for="tipo_identidade_id"><span style="color: #f44336;">*</span>Observacao</label>
+                                  <div class="input-group mb-3">
+                                      
+                                    <textarea class="form-control" formControlName="observacao"></textarea>
+                                 
+                                  </div>
+                                  <span
+                                  class="text-danger"
+                                  *ngIf="
+                                    (this.f.observacao.touched || this.submitted) && f.observacao.errors?.required
+                                  "
+                                  >Campo obrigatório</span>
+                                </div>
+                              </div>
+
+                          </div>
+             </form>
+
+            </div>
+    
+         
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          <button type="button" (click)="submite()"   class="btn btn-primary">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,185 @@
+<div class="row">
+
+    <div class="col-lg-12 col-12">
+        <div class="modall modal-info fadee" data-backdrop="static">
+          <div class="modal-dialog" style="max-width: 100%;">
+            <div class="modal-content" style="box-shadow: 0 0 0rem rgba(0,0,0,.5);">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Minhas Consultas</h4>
+
+                <div class="card-tools">
+                    <button class="btn btn-outline-primary btn-lg" type="button"  (click)="listartodas()"><i class="icon-refresh"></i> Recarregar Dados</button>
+                  
+                </div>
+
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <!-- /.card-body -->
+                <div class="table-responsivee">
+
+
+                <!--   <app-loading [show]="agenteComercialPedidoService.loading"></app-loading> -->
+
+                  <table class="table table-hover table-bordered table-stripedd text-center m-0 exportAsXLSXCliente">
+                    <tbody >
+                      <tr style="color: #fff; background: #193020">
+                        <th>#</th>
+                        <!-- <th>ID</th> -->
+                       <!-- <th>ID</th> -->
+                       <th>
+                        Paciente
+                       </th>
+                       <th>
+                        Medico Encarregado
+                       </th>
+                       <th>Tipo</th>
+                       <th>Estado</th>
+                       <th>Data</th>
+                       <th style="width: 329px;">Observação</th>
+                   
+                       <th>
+                       Data Criação
+                       </th>
+                       <th>
+                        Accções
+                       </th>
+                      </tr>
+                      <tr  *ngFor="let item of this.todasConsultas; index as i">
+                        <td>
+                          {{ i+ 1 }}
+                        </td>
+                        <td>
+                            {{item?.paciente?.user_info?.nome}}
+                        </td>
+                        <td *ngIf="item?.medico_id == null ">
+                            Sem Medico
+                        </td>
+
+                        <td *ngIf="item?.medico_id">
+                        {{item?.medico?.user_info?.nome}}
+                        </td>
+                        <td>
+                          {{item?.tipo}}
+                        </td>
+                        <td [ngClass]="item?.estado_consulta =='pendente' ? 'badge badge-warning' : item?.estado_consulta == 'aceite' ? 'badge badge-success' : 'badge badge-danger' ">
+                          {{item?.estado_consulta}}
+                        </td>
+                        <td >
+                          {{item?.data_consulta | date: 'yyy-mm-dd'}}
+                        </td>
+
+                        <td>
+                          {{item?.observacao}}
+                        </td>
+                        
+                        <td>
+                          {{item?.created_at | date: 'yyy-mm-dd'}}
+                        </td>
+
+                        <td>
+                            <div class="btn-group btn-block">
+                              <button type="button" class="btn btn-info  btn-sm btn-block"
+                                data-toggle="dropdown">Acções</button>
+                              <button type="button" class="btn btn-info btn-flat  dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu" role="menu" x-placement="bottom-start"
+                                style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(67px, 38px, 0px);">
+                                <a href="javascript:void(0)" (click)="this.aceitar(item.id)"  *ngIf="item?.estado_consulta =='pendente'" class="dropdown-item btn-sm"
+                                data-widget="chat-pane-toggle"
+                                  title="Aceitar"> <i class="fa fa-check"></i>
+                                     Aceitar 
+                                </a>
+             
+                                <a href="javascript:void(0)" (click)="this.rejeitar(item.id)"  *ngIf="item?.estado_consulta =='pendente'" class="dropdown-item btn-sm"
+                                data-widget="chat-pane-toggle"
+                                  title="Aceitar"> <i class="fa fa-wrong"></i>
+                                     Rejeijtar 
+                                </a>
+
+                                <a href="javascript:void(0)"  data-toggle="modal" data-target="#consulta" (click)="this.adicionarMedico(item.id)"  *ngIf="item?.medico_id ==null" class="dropdown-item btn-sm"
+                                data-widget="chat-pane-toggle"
+                                  title="Aceitar"> <i class="fa fa-user"></i>
+                                     Adicionar Medico 
+                                </a>
+                              </div>
+                            </div>
+                          </td>
+                       </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+  <!--             <div class="modal-footer">
+                <div class="row" style="width: 100%;">
+                  <div class="col-sm-12 col-md-5">
+                    <div class="dataTables_info">Mostrando de {{this.pagination.page}} a
+                      {{this.pagination.perPage}} de
+                      {{configService.numberFormat(this.pagination.total)}} registo{{ ( this.pagination.total > 1? 's':'')}}
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-7">
+                    <div class="pull-right">
+                      <pagination-controls (pageChange)="getPageFilterData($event)" previousLabel="Anterior" maxSize="6"
+                        nextLabel="Próximo" directionLinks="true" responsive="true" id='listFact'></pagination-controls>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+ </div>
+
+
+
+<div class="modal fade" id="consulta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document" style="max-width: 1000px;" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Adicionar Medico a Cosulta</h4>
+          <button type="button" #closeModal class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                  <!-- Modal Header -->
+    
+         
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+    
+             <!--  <app-loading [show]="this.loading"></app-loading> -->
+             <form [formGroup]="this.simpleForm" >
+
+                          <div class="row">
+                            <label class="col-form-label" for="tipo_identidade_id"><span style="color: #f44336;">*</span>Medico</label>
+                            <select  class="form-control" formControlName="medicoId" required autofocus
+                       >
+                        <option [value]="null">selecione o medico</option>
+                       <option [value]="medico?.id" *ngFor="let medico of this.medicos">
+                        {{medico?.user_info?.nome}}
+                       </option>
+                      </select>
+                          </div>
+             </form>
+
+            </div>
+    
+         
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          <button type="button" (click)="this.submit()"  class="btn btn-primary">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
